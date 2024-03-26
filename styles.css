@@ -13,18 +13,12 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    position: relative; /* Added position relative for positioning date info */
+    position: relative;
 }
 
 h1 {
     margin: 0;
-}
-
-.date-info {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 14px;
+    display: inline-block;
 }
 
 .visitor-count {
@@ -32,6 +26,46 @@ h1 {
     top: 20px;
     left: 20px;
     font-size: 14px;
+}
+
+.date-info {
+    position: absolute;
+    top: 20px;
+    right: 120px; /* Adjust right position to make space for visitor count */
+    font-size: 14px;
+}
+
+nav {
+    position: sticky; /* Make the navigation bar sticky */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #555; /* Change the background color of the navigation bar */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav li a {
+    display: block;
+    color: white; /* Change the text color of the navigation items */
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li a:hover {
+    background-color: #777; /* Change the background color of the navigation items on hover */
 }
 
 .content {
@@ -60,7 +94,7 @@ h1 {
 
 .ad-container {
     text-align: center;
-    margin-bottom: 20px; /* Added margin for spacing */
+    margin-bottom: 20px;
 }
 
 .contact-info {
@@ -85,7 +119,6 @@ footer {
     text-align: center;
 }
 
-/* Center-align copyright */
 footer .copyright {
     margin: 0 auto;
     width: fit-content;

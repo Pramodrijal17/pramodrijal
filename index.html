@@ -8,21 +8,36 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Pramod Rijal Website</h1>
+        <div class="header-content">
+            <h1>Welcome to Pramod Rijal Website</h1>
+            <div class="visitor-count">Visitor Count: <?php include 'visitor_count.php'; ?></div>
+        </div>
         <div class="date-info">Date: <span id="englishDate"></span></div>
     </header>
 
-    <div class="visitor-count">Visitor Count: <?php include 'visitor_count.php'; ?></div>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="location.reload();">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#travel-guide">Travel Guide</a></li>
+            <li><a href="#civil-engineering">Civil Engineering</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="content">
-        <div class="blog">
-            <h2 style="color: red;">Why Nepalese are awesome?</h2>
-            <p>
-                Nepali people are awesome for numerous reasons. Their resilience in overcoming adversities like natural disasters and political turmoil is truly remarkable, reflecting a deep-seated determination and strength of character. Furthermore, Nepali culture is steeped in hospitality and inclusivity, with a tradition of warmly welcoming guests and embracing diversity. This, coupled with their rich tapestry of traditions and spiritual practices, creates a vibrant and fascinating society that captivates the hearts of many. Whether it's their courageous spirit in conquering the world's highest peaks or their contributions to global culture through art, cuisine, and literature, Nepali people continue to inspire and leave an indelible mark on the world.
-                <br><br>
-                Moreover, Nepali people are known for their friendliness and community-oriented mindset, fostering strong bonds within their society and extending a helping hand to those in need. Their culinary delights, from savory momos to flavorful dal bhat, offer a tantalizing taste of their rich cultural heritage. Additionally, Nepali artisans showcase their exquisite craftsmanship through intricate woodcarvings, traditional handicrafts, and elaborate Thangka paintings, contributing to the world of art and aesthetics. Through their contributions to mountaineering, academia, sports, and beyond, Nepali individuals have left an enduring legacy, enriching the global community and earning well-deserved admiration for their remarkable qualities and achievements.
-            </p>
-        </div>
+        <section id="blog" class="blog">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>Why Nepalese are awesome?</h3>
+                <p>
+                    Nepali people are awesome for numerous reasons. Their resilience in overcoming adversities like natural disasters and political turmoil is truly remarkable, reflecting a deep-seated determination and strength of character. Furthermore, Nepali culture is steeped in hospitality and inclusivity, with a tradition of warmly welcoming guests and embracing diversity. This, coupled with their rich tapestry of traditions and spiritual practices, creates a vibrant and fascinating society that captivates the hearts of many. Whether it's their courageous spirit in conquering the world's highest peaks or their contributions to global culture through art, cuisine, and literature, Nepali people continue to inspire and leave an indelible mark on the world.
+                    <br><br>
+                    Moreover, Nepali people are known for their friendliness and community-oriented mindset, fostering strong bonds within their society and extending a helping hand to those in need. Their culinary delights, from savory momos to flavorful dal bhat, offer a tantalizing taste of their rich cultural heritage. Additionally, Nepali artisans showcase their exquisite craftsmanship through intricate woodcarvings, traditional handicrafts, and elaborate Thangka paintings, contributing to the world of art and aesthetics. Through their contributions to mountaineering, academia, sports, and beyond, Nepali individuals have left an enduring legacy, enriching the global community and earning well-deserved admiration for their remarkable qualities and achievements.
+                </p>
+            </div>
+            <!-- You can add more blog posts here -->
+        </section>
 
         <div class="image-slider">
             <img src="image1.jpg" alt="Image 1">
@@ -34,17 +49,23 @@
             <!-- Ad space will be provided here -->
         </div>
 
-        <div class="contact-info">
-            <a href="mailto:pramodrijal10@gmail.com"><img src="email_icon.png" alt="Email Icon" class="icon">pramodrijal10@gmail.com</a>
-            <a href="tel:+9779867709944"><img src="phone_icon.png" alt="Phone Icon" class="icon">+9779867709944</a>
-            <a href="https://www.linkedin.com/in/pramod-rijal-374470150/"><img src="linkedin_icon.png" alt="LinkedIn Icon" class="icon">LinkedIn</a>
-            <a href="https://www.facebook.com/pramod.rijal.813"><img src="facebook_icon.png" alt="Facebook Icon" class="icon">Facebook</a>
-            <a href="https://twitter.com/pramodrijal977"><img src="twitter_icon.png" alt="Twitter Icon" class="icon">Twitter</a>
-        </div>
+        <section id="contact" class="contact-info">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:pramodrijal10@gmail.com"><img src="email_icon.png" alt="Email Icon" class="icon">pramodrijal10@gmail.com</a>
+                <a href="tel:+9779867709944"><img src="phone_icon.png" alt="Phone Icon" class="icon">+9779867709944</a>
+                <a href="https://www.linkedin.com/in/pramod-rijal-374470150/"><img src="linkedin_icon.png" alt="LinkedIn Icon" class="icon">LinkedIn</a>
+                <a href="https://www.facebook.com/pramod.rijal.813"><img src="facebook_icon.png" alt="Facebook Icon" class="icon">Facebook</a>
+                <a href="https://twitter.com/pramodrijal977"><img src="twitter_icon.png" alt="Twitter Icon" class="icon">Twitter</a>
+            </div>
+        </section>
     </div>
 
     <footer>
-        <p class="copyright">&copy; 2024 Pramod Rijal</p>
+        <div class="footer-content">
+            <div class="visitor-count">Visitor Count: <?php include 'visitor_count.php'; ?></div>
+            <p class="copyright">&copy; 2024 Pramod Rijal</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

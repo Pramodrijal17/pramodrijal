@@ -3,25 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pramod Rijal</title>
+    <title>Pramod Rijal Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Pramod Rijal's Website</h1>
+        <h1>Welcome to Pramod Rijal Website</h1>
+        <div class="date-info">Date: <span id="englishDate"></span></div>
     </header>
-    
-    <div class="contact-info">
-        <a href="mailto:pramodrijal10@gmail.com"><img src="email_icon.png" alt="Email Icon" class="icon">pramodrijal10@gmail.com</a>
-        <a href="tel:+9779867709944"><img src="phone_icon.png" alt="Phone Icon" class="icon">+9779867709944</a>
-        <br>
-        <a href="https://www.linkedin.com/in/pramod-rijal-374470150/"><img src="linkedin_icon.png" alt="LinkedIn Icon" class="icon">LinkedIn</a>
-        <a href="https://www.facebook.com/pramod.rijal.813"><img src="facebook_icon.png" alt="Facebook Icon" class="icon">Facebook</a>
-        <a href="https://twitter.com/pramodrijal977"><img src="twitter_icon.png" alt="Twitter Icon" class="icon">Twitter</a>
+
+    <div class="visitor-count">Visitor Count: <?php include 'visitor_count.php'; ?></div>
+
+    <div class="content">
+        <div class="blog">
+            <h2 style="color: red;">Why Nepalese are awesome?</h2>
+            <p>
+                Nepali people are awesome for numerous reasons. Their resilience in overcoming adversities like natural disasters and political turmoil is truly remarkable, reflecting a deep-seated determination and strength of character. Furthermore, Nepali culture is steeped in hospitality and inclusivity, with a tradition of warmly welcoming guests and embracing diversity. This, coupled with their rich tapestry of traditions and spiritual practices, creates a vibrant and fascinating society that captivates the hearts of many. Whether it's their courageous spirit in conquering the world's highest peaks or their contributions to global culture through art, cuisine, and literature, Nepali people continue to inspire and leave an indelible mark on the world.
+                <br><br>
+                Moreover, Nepali people are known for their friendliness and community-oriented mindset, fostering strong bonds within their society and extending a helping hand to those in need. Their culinary delights, from savory momos to flavorful dal bhat, offer a tantalizing taste of their rich cultural heritage. Additionally, Nepali artisans showcase their exquisite craftsmanship through intricate woodcarvings, traditional handicrafts, and elaborate Thangka paintings, contributing to the world of art and aesthetics. Through their contributions to mountaineering, academia, sports, and beyond, Nepali individuals have left an enduring legacy, enriching the global community and earning well-deserved admiration for their remarkable qualities and achievements.
+            </p>
+        </div>
+
+        <div class="image-slider">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+
+        <div class="ad-container">
+            <!-- Ad space will be provided here -->
+        </div>
+
+        <div class="contact-info">
+            <a href="mailto:pramodrijal10@gmail.com"><img src="email_icon.png" alt="Email Icon" class="icon">pramodrijal10@gmail.com</a>
+            <a href="tel:+9779867709944"><img src="phone_icon.png" alt="Phone Icon" class="icon">+9779867709944</a>
+            <a href="https://www.linkedin.com/in/pramod-rijal-374470150/"><img src="linkedin_icon.png" alt="LinkedIn Icon" class="icon">LinkedIn</a>
+            <a href="https://www.facebook.com/pramod.rijal.813"><img src="facebook_icon.png" alt="Facebook Icon" class="icon">Facebook</a>
+            <a href="https://twitter.com/pramodrijal977"><img src="twitter_icon.png" alt="Twitter Icon" class="icon">Twitter</a>
+        </div>
     </div>
 
     <footer>
-        &copy; 2024 Pramod Rijal
+        <p class="copyright">&copy; 2024 Pramod Rijal</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

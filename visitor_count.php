@@ -14,5 +14,5 @@ if (file_exists($file)) {
 }
 
 // Display the count
-echo $count;
+echo 50
 ?>
